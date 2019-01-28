@@ -1,7 +1,10 @@
-# config.ru
 require 'bundler'
 Bundler.require
 
-require './controller'
+#prendre en compte tous les fichiers dans le dossier lib
+$:.unshift File.expand_path("./../lib", __FILE__)
 
+require 'controller'
 run ApplicationController
+require 'bundler'
+Bundler.require
