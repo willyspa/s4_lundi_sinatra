@@ -24,6 +24,7 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   pry
+  rack
   sinatra
 
 RUBY VERSION
